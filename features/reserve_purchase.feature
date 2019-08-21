@@ -7,9 +7,13 @@ As a new user
 I want to search for air tickets
 In order to make a purchase of reservation 
 
-Scenario: purchase flow of reservation for air tickets 
+Scenario Outline: Purchase flow of reservation for air tickets 
     Given I have successfully navigated to the Viajanet
-    When  I fill in the data to do a search
+    When  I fill in the data going to "<arrival>" and do a search
     And   I choose a result of flight
     And   I fill in the passenger and payment data
     Then  I validate the processing of purchase
+Examples:
+| arrival             | 
+| national flight     |
+| international flight|
