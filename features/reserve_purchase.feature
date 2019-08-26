@@ -9,11 +9,12 @@ In order to make a purchase of reservation
 
 Scenario Outline: Purchase flow of reservation for air tickets 
     Given I have successfully navigated to the Viajanet
-    When  I fill in the data going to "<arrival>" and do a search
+    When  I fill in the data going to "<destination>" and do a search
+    And   I fill in the date to start and 
     And   I choose a result of flight
     And   I fill in the passenger and payment data
     Then  I validate the processing of purchase
 Examples:
-| arrival             | 
-| national flight     |
-| international flight|
+|destination         | 
+|national flight     |
+|international flight|

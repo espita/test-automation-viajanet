@@ -9,3 +9,4 @@ gem 'selenium-webdriver', "3.141.0"
 gem 'webdrivers'
 gem 'pry'
 gem 'site_prism'
+gem 'faker', '1.9.2' 
